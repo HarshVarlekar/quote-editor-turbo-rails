@@ -8,3 +8,9 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+require 'faker'
+
+5.times do
+  Quote.create(name: Faker::Quote.famous_last_words)
+end
